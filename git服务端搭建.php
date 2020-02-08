@@ -1,13 +1,13 @@
 <?php
 /*
 1、添加git用户
-sudo adduser jim_git
+sudo adduser git
 2、添加用户名为git的密码
-sudo passwd jim_git
+sudo passwd git
 3、创建用户组名为git的用户组
-sudo groupadd jim_git
+sudo groupadd git
 4、将用户名为git的用户添加到git用户组
-sudo usermod -G jim_git jim_git
+sudo usermod -G git git
 5、选择目录（略）
 6、创建git目录
 mkdir test_docs.git
@@ -15,7 +15,7 @@ mkdir test_docs.git
 8、初始化仓库—bare裸仓库
 git init —bare
 9、修改仓库权限为git用户
-sudo chown -R jim_git:jim_git /srv/test_docs.git
+sudo chown -R git:git /srv/test_docs.git
 10、禁止git用户通过shell登录
 	10.1:设置git的git shell
 		chsh git
